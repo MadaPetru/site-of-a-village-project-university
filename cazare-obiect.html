@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="cazare-obiect-style.css" />
+    <title>Cazare Obiect</title>
+</head>
+<body>
+    <div class=row>
+        <div id="left-content">
+          <div class = "slider">
+      <div class = "slide fade" id = "slide-1">
+          <img src = "./images/image1.jpg" width="100%" height="400px">
+      </div>
+      <div class = "slide fade" id = "slide-2">
+          <img src = "./images/image2.jpg" width="100%" height="400px">
+      </div>
+      <div class = "slide fade" id = "slide-3">
+          <img src = "./images/image3.jpg" width="100%" height="400px">
+      </div>
+  </div> 
+  <div class="slider-nav">
+      <a class="dot" href="#slide-1"></a>
+      <a class="dot" href="#slide-2"></a>
+      <a class="dot" href="#slide-3"></a>
+  </div>
+            <p class="description">
+                Descriere: Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor sit amet, consectetuer
+                Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor sit amet, consectetuer
+            </p>
+            <p class="description">
+                Pret: 1000 Ron
+            </p>
+            <p class="description">
+                Numar de telefon programari: 0771 666 777
+            </p>
+            <p class="description">
+                Email: hennessy@hand.com
+            </p>
+        </div>
+        <div class="right-content">
+            <form [formGroup]="cerere-programare">
+              <div class="form-group">
+                <label for="nume">Prenume</label>
+                <input type="text" id="nume" class="form-control" placeholder="Ex: Iohanis" required>
+              </div>
+              <div class="form-group">
+                <label for="prenume">Nume Familie</label>
+                <input type="text" id="prenume" class="form-control" placeholder="Ex: Mondialu" required>
+              </div>
+              <div class="form-group">
+                <label for="telefon">Numar Telefon</label>
+                <input type="tel" id="telefon" class="form-control" placeholder="Ex: 0771 555 555" required>  
+              </div>
+          <div  class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Ex: text@text.extension" required>
+          </div>
+              <div class="form-group">
+                <label for="data-start">Data de Inceput</label>
+                <input type="date" id="data-start" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="data-plecare">Data de Plecare</label>
+                <input type="date" id="data-plecare" class="form-control" required>
+              </div>
+              <button type="button" class="button primary">Trimite Cerere Programare</button>
+            </form>
+          </div>
+    </div>
+</body>
+<footer>
+
+</footer>
+</html>

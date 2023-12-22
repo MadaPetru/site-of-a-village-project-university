@@ -1,0 +1,22 @@
+/*desktop*/
+@media (min-width: 1024px){
+    div .property-card .property-description{
+        color: rgb(13, 13, 47);
+        text-align: left;
+    }
+ 
+    div .row {
+        flex-direction: row;
+    }
+}
+/*tableta*/
+@media (min-width: 768px) and (max-width: 1023px){ 
+    div .property-card .property-description{
+        color: rgb(47, 0, 255);
+        text-align: left;
+    }
+ 
+    div .row {
+        flex-direction: row;
+    }
+}

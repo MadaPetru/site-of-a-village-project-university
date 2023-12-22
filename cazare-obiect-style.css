@@ -1,0 +1,131 @@
+.slider {
+    height: 30em;
+    width: 56em;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+
+  .slide  img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: opacity 2s;
+    border-radius: 5%;
+  }
+  
+  .slide:target {
+    opacity: 10;
+  }
+  
+  
+  .slider-nav {
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  .description{
+    width: 56em;
+  }
+
+  .right-content {
+    padding: 1em;
+    margin-left: 5em;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #0069d9;
+  }
+
+  @media (max-width: 1225px) and (min-width: 731px) {
+    .slider {
+      height: 20em;
+      width: 400px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .slider-nav {
+      margin-top: 10px;
+      margin-left: 166px;
+      display: inline;
+      position: relative;
+    }
+
+    .description{
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 730px) {
+    .slider {
+      height: 20em;
+      width: 200px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .slider-nav {
+      margin-top: 10px;
+      margin-left: 66px;
+      display: inline;
+      position: relative;
+    }
+
+    .description{
+      width: 200px;
+    }
+
+    .right-content {
+      padding: 1em;
+      margin-left: 5em;
+    }
+  }
+  

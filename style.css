@@ -1,0 +1,347 @@
+body
+{
+  background-color:#ace4cf;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+*
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.hide-menu-if-clicked{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo{
+    width: 10em;
+    height: 4em;
+    padding: 0.5em;
+}
+.hamburger{
+    margin: auto;
+    margin-right: 1%;
+}
+
+.right{
+    float: right;
+}
+
+.menu-not-phone{
+    display: none;
+}
+
+.hamburger span {
+    cursor: pointer;
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.site-name-home-page{
+    color: white;
+    padding: 22px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.hide-menu-if-clicked  a {
+    color:white;
+    background-color: #58927d;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.hide-menu-if-clicked a:hover {
+    background-color:rgb(169, 193, 213);
+    color: black;
+}
+
+.carousel-container{
+    display: none;
+}
+.slide-object{
+    display: none;
+}
+
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius:  0 3px 3px 0;
+    user-select: none;
+}
+
+.description-calea-mare{
+    text-align: justify;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .dots{
+    display: none;
+}
+
+.number-of-carousel-text{
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover{
+    background-color: #04AA6D;
+  }
+
+  .property-description h5
+  {
+    margin:0px;
+    font-size:1.4em;
+    font-weight:700;
+  }
+  
+  .property-description p
+  {
+    font-size:12px;
+  }
+  
+  .property-card
+  {
+    margin: 20px;
+    height:18em;
+    width:14em;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:row;
+    position:relative;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius:16px;
+    overflow:hidden;
+  }
+  /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+  
+  /* Top Half of card, image. */
+  
+  .property-image
+  {
+    height:6em;
+    width:14em;
+    padding:1em 2em;
+    position:Absolute;
+    top:0px;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image:url('./images/pestera-ursilor.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  
+  /* Bottom Card Section */
+  
+  .property-description
+  {
+    background-color: #caebdf;
+    height:12em;
+    width:14em;
+    position:absolute;
+    bottom:0em;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align:center;
+  }
+  
+  /* Property Cards Hover States */
+  
+  .property-card:hover .property-description
+  {
+    height:0em;
+    padding:0px 1em;
+  }
+  .property-card:hover .property-image
+  {
+    height:18em;
+  }
+  
+  .property-card:hover .property-social-icons
+  {
+    background-color:white;
+  }
+  
+  .row{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .wrapper{
+    width: 90%;
+  }
+  .wrapper img{
+    float: left;
+    width: 10em;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    border-radius: 10%;
+  }
+
+  .description-calea-mare{
+    text-align: justify;
+    font-size: large;
+    letter-spacing: 1px;
+        word-spacing: 5px;
+  }
+
+/*desktop*/
+@media (min-width: 1024px){
+    .hide-menu-if-clicked{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .carousel-container{
+        max-width: 100%;
+        position: relative;
+        display: block;
+    }
+    .dots{
+        text-align: center;
+        display: block;
+    }
+    .menu-not-phone  a {
+        color:white;
+        padding: 21px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    .menu-not-phone a:hover {
+        background-color:rgb(169, 193, 213);
+        color: black;
+    }
+
+    .menu-not-phone{
+        display: flex;
+        margin-left: auto;
+    }
+    .wrapper img{
+        float: left;
+        width: 20em;
+        margin-right: 2%;
+        margin-bottom: 1%;
+        margin-left: 1%;
+        margin-top: 1%;
+        border-radius: 10%;
+      }
+    
+      .description-calea-mare{
+        text-align: justify;
+        font-size: large;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+      }
+}
+/*tableta*/
+@media (min-width: 768px) and (max-width: 1023px){
+    .wrapper img{
+        float: left;
+        width: 15em;
+        margin-right: 2%;
+        margin-bottom: 1%;
+        margin-left: 1%;
+        margin-top: 1%;
+        border-radius: 10%;
+      }
+    
+      .description-calea-mare{
+        text-align: justify;
+        font-size: large;
+        margin-top: 1%;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+      }
+    .hide-menu-if-clicked{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .carousel-container{
+        display: none;
+    }
+    .dots{
+        display: none;
+    }
+    .menu-not-phone  a {
+        color:white;
+        padding: 21px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    .menu-not-phone a:hover {
+        background-color:rgb(169, 193, 213);
+        color: black;
+    }
+
+    .menu-not-phone{
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
